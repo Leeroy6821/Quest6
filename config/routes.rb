@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  root 'pages#index' # controller#action
+  # controller#action
+  # localhost/questions
+
+  get '/questions', to: 'questions#index'
+
+  root 'pages#index'
 end
