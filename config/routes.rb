@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  # controller#action
-  # localhost/questions
 
-  get '/questions', to: 'questions#index'
+  get '/questions', to: 'questions#index'       # localhost/questions
 
-  root 'pages#index'
+  get '/questions/new', to: 'questions#new'
+
+  root 'pages#index'                             # controller#action
+
 end
