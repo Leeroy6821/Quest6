@@ -1,0 +1,141 @@
+Index: app/views/layouts/application.html.erb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <title>Quest6</title>\r\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\r\n    <%= csrf_meta_tags %>\r\n    <%= csp_meta_tag %>\r\n\r\n    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>\r\n    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>\r\n  </head>\r\n\r\n  <body>\r\n  <nav>\r\n    <ul>\r\n      <li><%= link_to 'Home', root_path %></li>\r\n      <li><%= link_to 'Questions', questions_path %></li>\r\n    </ul>\r\n  </nav>\r\n    <%= yield %>\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/views/layouts/application.html.erb b/app/views/layouts/application.html.erb
+--- a/app/views/layouts/application.html.erb	(revision 09a2a2a3fbdd3f47d37da0411bc1b241f3f8dd7c)
++++ b/app/views/layouts/application.html.erb	(date 1655847232171)
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html>
++<html lang="UA">
+   <head>
+     <meta charset="utf-8">
+     <title>Quest6</title>
+@@ -12,12 +12,51 @@
+   </head>
+ 
+   <body>
+-  <nav>
+-    <ul>
+-      <li><%= link_to 'Home', root_path %></li>
+-      <li><%= link_to 'Questions', questions_path %></li>
+-    </ul>
+-  </nav>
++  <header class="p-3 bg-dark text-white">
++    <div class="container">
++      <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
++        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
++          <li><%= link_to 'Home', root_path, class: 'nav-link px-2 text-white' %></li>
++          <li><%= link_to 'Questions', questions_path, class: 'nav-link px-2 text-white' %></li>
++        </ul>
++      </nav>
++    </div>
++  </header>
++
++
++  <div class="container">
++    <div class="row justify-content-md-center">
++      <div class="col col-lg-2">
++        1 of 3
++      </div>
++      <div class="col-md-auto">
++        Variable width content
++        also new row
++      </div>
++      <div class="row">
++        <div class="col">
++          1 of 3
++        </div>
++      <div class="col col-lg-2">
++        3 of 3
++      </div>
++    </div>
++    <div class="row">
++      <div class="col">
++        1 of 3
++      </div>
++      <div class="col-md-auto">
++        Variable width content
++      </div>
++      <div class="col col-lg-2">
++        3 of 3
++      </div>
++    </div>
++    </div>
++
++  </div>
++  <main class="container mt-3">
+     <%= yield %>
++   </main>
+   </body>
+ </html>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cbe1baba-b11d-486b-85cc-a39827f3dff5\" name=\"Changes\" comment=\"full CRUD methods added\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/assets/stylesheets/application.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/assets/stylesheets/application.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/controllers/questions_controller.rb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/controllers/questions_controller.rb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/views/layouts/application.html.erb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/views/layouts/application.html.erb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/yarn.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/yarn.lock\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"lesson_3\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"5e9eeb47-db67-4456-a56f-a9262f0e9615\" />\r\n        <option name=\"url\" value=\"git@github.com:Leeroy6821/Quest6.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/app/controllers/questions_controller.rb\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/app/views/questions/show.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/app/views/questions/index.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/.gitignore\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/config/routes.rb\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/app/views/questions/edit.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Gemfile\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/app/views/layouts/application.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/app/views/questions/new.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/app/views/questions/_form.html.erb\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" root2=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"29qi4l4BIxQn3bxcRD7oioIWaEC\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"Ruby.ViewRefParam.DefaultExtension\" value=\"html.erb\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"yarn\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"file.status.colors\" />\r\n  </component>\r\n  <component name=\"ReaderModeSettings\">\r\n    <option name=\"enabled\" value=\"false\" />\r\n  </component>\r\n  <component name=\"RubyModuleManagerSettings\">\r\n    <option name=\"blackListedRootsPaths\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Rails.Development: Quest6\">\r\n    <configuration name=\"Development: Quest6\" type=\"RailsRunConfigurationType\" factoryName=\"Rails\">\r\n      <module name=\"Quest6\" />\r\n      <predefined_log_file enabled=\"true\" id=\"RUBY_RAILS_SERVER\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" bundleExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"JRubyRunConfigurationExtension\" NailgunExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" track_test_folders=\"true\" runner=\"rcov\" IGNORE_RCOVRT=\"true\" ENABLE_BRANCH_COVERAGE=\"true\" ENABLE_FORKED_COVERAGE=\"true\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SCRIPT_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"PORT\" VALUE=\"3000\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"IP\" VALUE=\"127.0.0.1\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"DUMMY_APP\" VALUE=\"test/dummy\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RAILS_SERVER_TYPE\" VALUE=\"Default\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ENVIRONMENT_TYPE\" VALUE=\"development\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"LAUNCH_JS\" VALUE=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Production: Quest6\" type=\"RailsRunConfigurationType\" factoryName=\"Rails\">\r\n      <module name=\"Quest6\" />\r\n      <predefined_log_file enabled=\"true\" id=\"RUBY_RAILS_SERVER\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" bundleExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"JRubyRunConfigurationExtension\" NailgunExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" track_test_folders=\"true\" runner=\"rcov\" IGNORE_RCOVRT=\"true\" ENABLE_BRANCH_COVERAGE=\"true\" ENABLE_FORKED_COVERAGE=\"true\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"SCRIPT_ARGS\" VALUE=\"\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"PORT\" VALUE=\"3000\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"IP\" VALUE=\"127.0.0.1\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"DUMMY_APP\" VALUE=\"test/dummy\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"RAILS_SERVER_TYPE\" VALUE=\"Default\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"ENVIRONMENT_TYPE\" VALUE=\"production\" />\r\n      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME=\"LAUNCH_JS\" VALUE=\"false\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"spec: Quest6\" type=\"RakeRunConfigurationType\" factoryName=\"Rake\">\r\n      <module name=\"Quest6\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" bundleExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"JRubyRunConfigurationExtension\" NailgunExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" track_test_folders=\"true\" runner=\"rcov\" IGNORE_RCOVRT=\"true\" ENABLE_BRANCH_COVERAGE=\"true\" ENABLE_FORKED_COVERAGE=\"true\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_NAME\" VALUE=\"spec\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ATTACHED_TEST_FRAMEWORKS\" VALUE=\":rspec \" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TRACE\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_DRYRUN\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_PREREQS\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TESTOPTS\" VALUE=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"test: Quest6\" type=\"RakeRunConfigurationType\" factoryName=\"Rake\">\r\n      <module name=\"Quest6\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RUBY_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"WORK DIR\" VALUE=\"$MODULE_DIR$\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"SHOULD_USE_SDK\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"ALTERN_SDK_NAME\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"myPassParentEnvs\" VALUE=\"true\" />\r\n      <envs>\r\n        <env name=\"RAILS_ENV\" value=\"test\" />\r\n      </envs>\r\n      <EXTENSION ID=\"BundlerRunConfigurationExtension\" bundleExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"JRubyRunConfigurationExtension\" NailgunExecEnabled=\"false\" />\r\n      <EXTENSION ID=\"RubyCoverageRunConfigurationExtension\" track_test_folders=\"true\" runner=\"rcov\" IGNORE_RCOVRT=\"true\" ENABLE_BRANCH_COVERAGE=\"true\" ENABLE_FORKED_COVERAGE=\"true\" />\r\n      <EXTENSION ID=\"org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension\" SCRATCH_USE_RAILS_RUNNER=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_NAME\" VALUE=\"test\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ARGS\" VALUE=\"\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_ATTACHED_TEST_FRAMEWORKS\" VALUE=\":test_unit \" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TRACE\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_DRYRUN\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_PREREQS\" VALUE=\"false\" />\r\n      <RAKE_RUN_CONFIG_SETTINGS_ID NAME=\"RAKE_TASK_OPTION_TESTOPTS\" VALUE=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SpringUtil\" SPRING_PRE_LOADER_OPTION=\"true\" RAKE_SPRING_PRE_LOADER_OPTION=\"true\" RAILS_SPRING_PRE_LOADER_OPTION=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cbe1baba-b11d-486b-85cc-a39827f3dff5\" name=\"Changes\" comment=\"\" />\r\n      <created>1653846835435</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1653846835435</updated>\r\n      <workItem from=\"1653846863537\" duration=\"3200000\" />\r\n      <workItem from=\"1653870100433\" duration=\"1133000\" />\r\n      <workItem from=\"1653945885464\" duration=\"7105000\" />\r\n      <workItem from=\"1654253877458\" duration=\"1127000\" />\r\n      <workItem from=\"1654265986122\" duration=\"2459000\" />\r\n      <workItem from=\"1654637865891\" duration=\"10252000\" />\r\n      <workItem from=\"1654648251735\" duration=\"810000\" />\r\n      <workItem from=\"1654715297577\" duration=\"898000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"add lost partial\">\r\n      <created>1654645836186</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654645836186</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"full CRUD methods added\">\r\n      <created>1654646023513</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654646023513</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"add lost partial\" />\r\n    <MESSAGE value=\"full CRUD methods added\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"full CRUD methods added\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 09a2a2a3fbdd3f47d37da0411bc1b241f3f8dd7c)
++++ b/.idea/workspace.xml	(date 1655847245713)
+@@ -2,14 +2,9 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="cbe1baba-b11d-486b-85cc-a39827f3dff5" name="Changes" comment="full CRUD methods added">
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -67,7 +62,7 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="last_opened_file_path" value="E:/$University/Web/Site/Quest6" />
+     <property name="nodejs_package_manager_path" value="yarn" />
+     <property name="settings.editor.selected.configurable" value="file.status.colors" />
+   </component>
+@@ -184,7 +179,12 @@
+       <workItem from="1654265986122" duration="2459000" />
+       <workItem from="1654637865891" duration="10252000" />
+       <workItem from="1654648251735" duration="810000" />
+-      <workItem from="1654715297577" duration="898000" />
++      <workItem from="1654715297577" duration="5528000" />
++      <workItem from="1654889900101" duration="1357000" />
++      <workItem from="1655244604215" duration="1318000" />
++      <workItem from="1655322426270" duration="3165000" />
++      <workItem from="1655666585274" duration="1191000" />
++      <workItem from="1655670253462" duration="1452000" />
+     </task>
+     <task id="LOCAL-00001" summary="add lost partial">
+       <created>1654645836186</created>
+@@ -205,6 +205,16 @@
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.History.Properties">
++    <option name="COLUMN_ID_ORDER">
++      <list>
++        <option value="Default.Root" />
++        <option value="Default.Author" />
++        <option value="Default.Date" />
++        <option value="Default.Subject" />
++      </list>
++    </option>
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">

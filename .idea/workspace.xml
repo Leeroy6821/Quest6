@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbe1baba-b11d-486b-85cc-a39827f3dff5" name="Changes" comment="full CRUD methods added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
     </list>
@@ -14,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_3" />
+        <entry key="$PROJECT_DIR$" value="09a2a2a3fbdd3f47d37da0411bc1b241f3f8dd7c" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,16 +37,25 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/views/questions/show.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/views/questions/index.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/routes.rb" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/views/questions/edit.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Gemfile" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/views/questions/new.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/views/questions/index.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/views/questions/index.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/routes.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/Gemfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/views/questions/show.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/views/questions/new.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/views/questions/_form.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/views/layouts/application.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/controllers/questions_controller.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/views/questions/show.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/views/questions/edit.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Gemfile" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/views/questions/_form.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/views/questions/new.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/$DRIVE/1LANGUAGE/Ruby on Rails/Projects/Quest6/app/views/questions/edit.html.erb" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="29qi4l4BIxQn3bxcRD7oioIWaEC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -62,12 +72,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/$University/Web/Site/Quest6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Site/Quest6" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\$University\Web\Sites\Quest6\app\assets\images" />
+    </key>
   </component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
