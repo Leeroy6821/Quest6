@@ -26,10 +26,13 @@
   </header>
 
 
-    </div>
-    <main class="container mt-3">
-      <%= yield %>
-    </main>
+  <main class="container mt-3">
+    <% flash.each do |k, v| %>
+      <%= tag.div v, class: "alert alert-#{k}", role: 'alert' %>
+    <% end %>
+
+    <%= yield %>
+  </main>
 
   <!-- footer -->
   <section class="p14">

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="RM-212.5712.40">
+  <component name="dataSourceStorageLocal" created-in="RM-222.3345.111">
     <data-source name="Rails Quest6: development" uuid="bed4563a-100a-4598-8fdd-f250f887f109">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
       <secret-storage>forget</secret-storage>
-      <auth-provider>no-auth</auth-provider>
       <schema-mapping />
     </data-source>
     <data-source name="Rails Quest6: test" uuid="79728871-7ff4-4119-9769-80d2766f11df">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
-      <auth-provider>no-auth</auth-provider>
       <schema-mapping />
     </data-source>
   </component>
