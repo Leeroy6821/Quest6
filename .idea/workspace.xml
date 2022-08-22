@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cbe1baba-b11d-486b-85cc-a39827f3dff5" name="Changes" comment="full CRUD methods added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +216,7 @@
       <workItem from="1658768661468" duration="1387000" />
       <workItem from="1660068244451" duration="819000" />
       <workItem from="1660154669630" duration="6762000" />
-      <workItem from="1660907003095" duration="1265000" />
+      <workItem from="1660907003095" duration="2653000" />
     </task>
     <task id="LOCAL-00001" summary="add lost partial">
       <created>1654645836186</created>
