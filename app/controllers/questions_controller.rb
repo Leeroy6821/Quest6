@@ -47,6 +47,6 @@ private
   end
 
   def set_question
-    @question = Question.find_by id: params[:id]
+    @question = Question.find id: params[:id]
   end
 end
