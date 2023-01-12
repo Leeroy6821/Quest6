@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbe1baba-b11d-486b-85cc-a39827f3dff5" name="Changes" comment="full CRUD methods added">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/errorrs.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/ErrorHandling.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +70,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "yarn",
-    "ruby.rails.projectView.checked": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Ruby on Rails/Application/Quest6&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
@@ -225,7 +226,14 @@
       <workItem from="1668028936408" duration="3538000" />
       <workItem from="1668065854040" duration="563000" />
       <workItem from="1669051048576" duration="2105000" />
-      <workItem from="1669055244524" duration="6334000" />
+      <workItem from="1669055244524" duration="8227000" />
+      <workItem from="1669941894260" duration="1080000" />
+      <workItem from="1670034924633" duration="944000" />
+      <workItem from="1671699020178" duration="289000" />
+      <workItem from="1671699844184" duration="3649000" />
+      <workItem from="1673189256714" duration="1217000" />
+      <workItem from="1673479254354" duration="1771000" />
+      <workItem from="1673550842707" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="add lost partial">
       <created>1654645836186</created>
