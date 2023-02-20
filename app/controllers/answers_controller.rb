@@ -1,13 +1,20 @@
 class AnswersController < ApplicationController
-  before_action :set_question!, only: %i[show destroy edit update]
+  before_action :set_question!
 
   def create
     @answer = @question.answers.build answer_params
+
+    if @answer.save
+      flash[:success] = 'Answer created!'
+      redirect_to question_path(@question)
+    else
+      render '/questions/show'
+    end
   end
 
   private
 
-  def question_params
+  def answer_params
     params.require(:answer).permit(:body)
   end
 
