@@ -3,9 +3,9 @@ class QuestionsController < ApplicationController
 
   def show
     @answer = @question.answers.build
-    @question = Answer.order created_at: :desc
+    @answers = @question.answers.order created_at: :desc
   end
-  
+
   def destroy
     @question.destroy
     flash[:info] = "Question deleted"
