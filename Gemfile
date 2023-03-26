@@ -21,7 +21,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
+
 # Use Active Storage variant
+#
 # gem 'image_processing', '~> 1.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -31,6 +35,7 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'faker', '~> 2'
 end
 
 group :development do

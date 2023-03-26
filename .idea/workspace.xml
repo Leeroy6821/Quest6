@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbe1baba-b11d-486b-85cc-a39827f3dff5" name="Changes" comment="full CRUD methods added">
+      <change beforePath="$PROJECT_DIR$/.idea/Quest6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Quest6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_08_2022_9_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_08_2022_9_54__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/answers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_4" />
+        <entry key="$PROJECT_DIR$" value="lesson_6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,7 +103,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
     &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -109,6 +111,9 @@
     <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Ruby on Rails\Application\Quest6\config\credentials" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\$University\Web\Sites\Quest6\app\assets\images" />
     </key>
@@ -388,6 +393,14 @@
       <workItem from="1677433195789" duration="6516000" />
       <workItem from="1677444395338" duration="36000" />
       <workItem from="1677529809115" duration="4021000" />
+      <workItem from="1677535788643" duration="2689000" />
+      <workItem from="1677681782994" duration="584000" />
+      <workItem from="1678378737558" duration="4757000" />
+      <workItem from="1678895056270" duration="141000" />
+      <workItem from="1679080115972" duration="1420000" />
+      <workItem from="1679180408944" duration="864000" />
+      <workItem from="1679697710937" duration="2942000" />
+      <workItem from="1679853972509" duration="8102000" />
     </task>
     <task id="LOCAL-00001" summary="add lost partial">
       <created>1654645836186</created>
