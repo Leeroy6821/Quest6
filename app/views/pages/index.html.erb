@@ -1,5 +1,7 @@
 <% currently_at 'Home' %>     <!--додає навбар на сайт-->
+<% provide :page_title %>
 
 <h1>Welcome to this Perfect project</h1>
 
+<%= current_user.inspect %>
 &copy; @Alexandr <%= Time.now.year %>

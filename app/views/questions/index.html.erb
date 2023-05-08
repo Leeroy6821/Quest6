@@ -4,7 +4,7 @@
 <h1 class="mb-4"> HELLO THERE, ITS A QUESTION</h1>
 
 <%= link_to "New question", new_question_path, class: 'mb-3 btn btn-outline-primary btn-lg' %>
-rails
+
 <%= paginate @question %>
 
 <% @question.each do |question| %>
